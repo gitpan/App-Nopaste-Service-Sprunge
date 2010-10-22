@@ -3,15 +3,20 @@ use warnings;
 
 package App::Nopaste::Service::Sprunge;
 BEGIN {
-  $App::Nopaste::Service::Sprunge::VERSION = '0.001';
+  $App::Nopaste::Service::Sprunge::VERSION = '0.002';
 }
-# ABSTRACT: Adds sprunge.us support to L<App::Nopaste>
+# ABSTRACT: Adds sprunge.us support to App::Nopaste
 
 use base 'App::Nopaste::Service';
 
+
 sub available {
-    eval 'require WWW::Pastebin::Sprunge::Create; 1'
+    eval {
+        require WWW::Pastebin::Sprunge::Create;
+        1;
+    };
 }
+
 
 sub run {
     my $self = shift;
@@ -38,11 +43,22 @@ sub run {
 
 =head1 NAME
 
-App::Nopaste::Service::Sprunge - Adds sprunge.us support to L<App::Nopaste>
+App::Nopaste::Service::Sprunge - Adds sprunge.us support to App::Nopaste
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 METHODS
+
+=head2 available
+
+Returns whether or not L<WWW::Pastebin::Sprunge::Create> is
+available so we can actually paste to L<http://sprunge.us>.
+
+=head2 run
+
+Run the application code to paste to L<http://sprunge.us>.
 
 =head1 SEE ALSO
 

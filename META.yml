@@ -1,5 +1,5 @@
 ---
-abstract: 'Adds sprunge.us support to L<App::Nopaste>'
+abstract: 'Adds sprunge.us support to App::Nopaste'
 author:
   - 'Mike Doherty <doherty@cs.dal.ca>'
 build_requires:
@@ -22,4 +22,4 @@ requires:
 resources:
   bugtracker: http://github.com/doherty/App-Nopaste-Service-Sprunge/issues
   repository: http://github.com/doherty/App-Nopaste-Service-Sprunge
-version: 0.001
+version: 0.002

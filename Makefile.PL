@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Adds sprunge.us support to L<App::Nopaste>',
+  'ABSTRACT' => 'Adds sprunge.us support to App::Nopaste',
   'AUTHOR' => 'Mike Doherty <doherty@cs.dal.ca>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'App::Nopaste::Service' => '0',
     'WWW::Pastebin::Sprunge::Create' => '0'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }
