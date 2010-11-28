@@ -3,9 +3,9 @@ use warnings;
 
 package App::Nopaste::Service::Sprunge;
 BEGIN {
-  $App::Nopaste::Service::Sprunge::VERSION = '0.002';
+  $App::Nopaste::Service::Sprunge::VERSION = '0.003';
 }
-# ABSTRACT: Adds sprunge.us support to App::Nopaste
+# ABSTRACT: adds sprunge.us support to App::Nopaste
 
 use base 'App::Nopaste::Service';
 
@@ -41,13 +41,15 @@ sub run {
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
-App::Nopaste::Service::Sprunge - Adds sprunge.us support to App::Nopaste
+App::Nopaste::Service::Sprunge - adds sprunge.us support to App::Nopaste
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 METHODS
 
@@ -70,8 +72,8 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/App-Nopaste-Service-Sprunge/>.
 
-The development version lives at L<http://github.com/doherty/App-Nopaste-Service-Sprunge>
-and may be cloned from L<git://github.com/doherty/App-Nopaste-Service-Sprunge>.
+The development version lives at L<http://github.com/doherty/App-Nopaste-Service-Sprunge.git>
+and may be cloned from L<git://github.com/doherty/App-Nopaste-Service-Sprunge.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 
@@ -84,15 +86,14 @@ L<http://github.com/doherty/App-Nopaste-Service-Sprunge/issues>.
 
 =head1 AUTHOR
 
-Mike Doherty <doherty@cs.dal.ca>
+Mike Doherty <doherty@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2100 by Mike Doherty.
+This software is copyright (c) 2100 by Mike Doherty.
 
-This is free software, licensed under:
-
-  The GNU General Public License, Version 3, June 2007
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 

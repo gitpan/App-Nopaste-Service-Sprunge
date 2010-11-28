@@ -9,8 +9,8 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Adds sprunge.us support to App::Nopaste',
-  'AUTHOR' => 'Mike Doherty <doherty@cs.dal.ca>',
+  'ABSTRACT' => 'adds sprunge.us support to App::Nopaste',
+  'AUTHOR' => 'Mike Doherty <doherty@cpan.org>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
     'File::Temp' => '0',
@@ -21,13 +21,13 @@ my %WriteMakefileArgs = (
   },
   'DISTNAME' => 'App-Nopaste-Service-Sprunge',
   'EXE_FILES' => [],
-  'LICENSE' => 'gpl',
+  'LICENSE' => 'perl',
   'NAME' => 'App::Nopaste::Service::Sprunge',
   'PREREQ_PM' => {
     'App::Nopaste::Service' => '0',
     'WWW::Pastebin::Sprunge::Create' => '0'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }
