@@ -1,5 +1,8 @@
 Revision history for Perl module App-Nopaste-Service-Sprunge
 
+0.004     2011-04-21
+    * Packaging updates
+
 0.003     2010-11-28
     * License is now Perl_5: dual-licensed under the GPL and Artistic licenses
 

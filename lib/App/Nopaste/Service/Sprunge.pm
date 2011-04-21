@@ -1,12 +1,8 @@
+package App::Nopaste::Service::Sprunge;
+# ABSTRACT: adds sprunge.us support to App::Nopaste
 use strict;
 use warnings;
-
-package App::Nopaste::Service::Sprunge;
-BEGIN {
-  $App::Nopaste::Service::Sprunge::VERSION = '0.003';
-}
-# ABSTRACT: adds sprunge.us support to App::Nopaste
-
+our $VERSION = '0.004'; # VERSION
 use base 'App::Nopaste::Service';
 
 
@@ -49,7 +45,7 @@ App::Nopaste::Service::Sprunge - adds sprunge.us support to App::Nopaste
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 METHODS
 
@@ -72,17 +68,22 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/App-Nopaste-Service-Sprunge/>.
 
-The development version lives at L<http://github.com/doherty/App-Nopaste-Service-Sprunge.git>
+The development version lives at L<http://github.com/doherty/App-Nopaste-Service-Sprunge>
 and may be cloned from L<git://github.com/doherty/App-Nopaste-Service-Sprunge.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
+
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/doherty/App-Nopaste-Service-Sprunge>
+and may be cloned from L<git://github.com/doherty/App-Nopaste-Service-Sprunge.git>
 
 =head1 BUGS AND LIMITATIONS
 
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://github.com/doherty/App-Nopaste-Service-Sprunge/issues>.
+L<https://github.com/doherty/App-Nopaste-Service-Sprunge/issues>.
 
 =head1 AUTHOR
 
